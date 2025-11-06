@@ -1,0 +1,106 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Pytest
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Database
+*.sqlite3
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables
+.env
+
+# Docker
+*.stackdump
+.dockerignore
+# Dockerfile
+docker-compose.yml
+
+# VSCode
+.vscode/
+
+# Mac OS
+.DS_Store
+
+# Python-poetry
+poetry.lock
+
+# API keys or credentials (make sure to store them somewhere safe)
+*.pem
+*.key
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.obj
+
+# Data directories, vector DBs, and non-source files
+data/
+*.faiss
+*.pkl
+
+# Project-specific: ignore index files, cache, and output
+data/faiss_index/
+data/faiss_index/index.faiss
+data/faiss_index/index.pkl
+
+# README and requirements typically SHOULD be pushed, but you can uncomment if needed
+# README.md
+# requirements.txt
