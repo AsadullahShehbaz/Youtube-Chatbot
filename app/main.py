@@ -5,6 +5,9 @@ from app.utils.youtube_loader import fetch_transcript
 from app.core.vectorstore import build_or_load_vectorstore
 from app.core.llm_chain import create_rag_chain
 from app.core.config import OPENROUTER_API_KEY, OPENROUTER_BASE_URL
+from fastapi.middleware.cors import CORSMiddleware
+
+
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -55,3 +58,12 @@ def ask_youtube_question(
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # safer: specify your extension ID later
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
